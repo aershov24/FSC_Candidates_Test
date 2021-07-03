@@ -1,2 +1,3 @@
-# MLSC_PILOT
-MLSC pilot repo for candidates testing
+# Welcome to MLSC Pilot Repo
+Please read this document carefully before submitting your MLSC challenge
+
