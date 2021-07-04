@@ -19,7 +19,7 @@ Please read this document carefully before submitting your MLSC candidate challe
   * Link(s) to sources (you don't need to write answer by yourself, just combine and research best sources that are available)
   * QA Difficulty Level (`entry`, `junior`, `mid`, `senior`, `expert`)
 * Look at the `QAS_Examples.md` file in this repo for examples of QAS Markdown file formatting. Please strictly follow these formatting conventions. That's the key to pass the challenge ;)
-* Create pull request from your repo to the MLSC Candidate repo
+* Create a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from your repo to the MLSC Candidate repo
 * Send us email when you happy us to verify it
 
 # How To Choose Good Interview Question
