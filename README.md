@@ -1,29 +1,29 @@
-# Welcome to MLSC Pilot Repo
-Please read this document carefully before submitting your MLSC challenge
+# Welcome to MLSC Candidate Repo
+Please read this document carefully before submitting your MLSC candidate challenge
 
 ## What You Need to Do
 
 * Fork this repository
 * Carefully read the `readme.md`
-* Create the `Logistic_Regression_youremail_TEST.md` file in your repo and add **3 questions and answers (QAS) relevant to Logistic Regression topic that you would ask on a real interview** if you would hire ML/DS devs for your own project. 
+* Create the `Logistic_Regression_youremail_TEST.md` file in your repo and add **3 questions and answers (QAS) relevant to Logistic Regression topic that you would ask on a real interview** if you would hire ML/DS devs for your own project
 * Make sure you cover:
-  * one simple question for Junior position, 
-  * one medium difficulty question for Mid position, and 
-  * one hard question for Senior position.  
+  * one **junior** question for Junior position, 
+  * one **medium** difficulty question for Mid position, and 
+  * one **senior** question for Senior position.  
 We will look at this criteria when assessing your content. 
 
-* Make sure that for all QAS you include:
+* Make sure that for all QA you'll include:
   - Question Title
-  - Question Description (optional) 
+  - Question Description (optional)
   - Answer + Code (if needed)
   - Link(s) to source (you don't need to write answer by yourself, just combine and research best sources that are available)
-  - QA Difficulty level (entry, junior, mid, senior, expert)
+  - QA Difficulty Level (entry, junior, mid, senior, expert)
 * Look at the `QAS_Examples.md` file in this repo for examples of QAS Markdown file formatting. Please strictly follow these formatting conventions. That's the key to pass the challenge ;)
-* Create pull request from your repo to the MLSC repo
+* Create pull request from your repo to the MLSC Candidate repo
 * Send us email when you happy us to verify it
 
 ## How To Format Interview Question
-All interview questions must be formated as Markdown. See the example below:
+All interview questions must be formated using Markdown. See some good examples below. Note how to format lists, code, file names, terms, links, QA difficulties and so on:
 
 ---
 ### Q: What are different integer data types in MySQL? How can you use unsigned integer in MySQL.
