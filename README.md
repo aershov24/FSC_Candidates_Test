@@ -87,7 +87,7 @@ There are a list of quality resources you can do you research on:
 
 💡**Hint**: When exploring some topic look at the `Table of Content` to get a sense on what subtopics you can cover
 
-# How To Format Interview Question
+# How To Format Interview Questions
 
 All interview questions must be formatted using those rules:
 
@@ -159,4 +159,4 @@ There are some good tools that can help you along the way
 
 # What's Next?
 
-Once we got your file we will verify the results and circle back to you in no time. Then we schedule a Slack call and talk about your first MLSC project :)
+Once we got your pull request we will verify the results and circle back to you in no time. Then we schedule a Slack call and discuss your first MLSC topic to work on :)
