@@ -1,3 +1,5 @@
+![](https://user-images.githubusercontent.com/13550565/124379449-be1d1600-dce9-11eb-8a29-f7da7365c1b1.png)
+
 # Welcome to MLSC Candidate Repo
 
 Please read this document carefully before submitting your MLSC candidate challenge
