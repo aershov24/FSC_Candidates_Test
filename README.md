@@ -2,7 +2,9 @@
 
 # Welcome to MLSC Candidate Repo
 
-Please read this document carefully before submitting your MLSC candidate challenge
+Please read this document carefully before submitting your MLSC candidate challenge.
+
+> The fact is, if you DO read, complete and pass the challenge successfully you most likely lie outside of 3 times the standard deviation from the average candidate, thus you are the "anomaly" on the market, thus we want hire you :)
 
 # What You Need to Do
 
@@ -22,18 +24,18 @@ Please read this document carefully before submitting your MLSC candidate challe
   * QA Difficulty Level (`entry`, `junior`, `mid`, `senior`, `expert`)
 * Look at the `QAS_Examples.md` file in this repo for examples of QAS Markdown file formatting. Please strictly follow these formatting conventions. That's the key to pass the challenge ;)
 * Create a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from your repo to the MLSC Candidate repo
-* Send us email when you happy us to verify it
+* Send us email or DM us on UpWork when you happy us to verify it
 
 # How To Choose/Write Good Interview Questions
 
-When choosing the good interview question use several simple tactics:
+When choosing a good interview question use several simple tactics:
 
 * The QA should not be too **broad**, like 
   * 🚫 `What is Machine Learning?`
-* The QA should be **opened** and spark rather a conversation with a candidate than test his/her/their specific knowledge. Compare:
+* The QA should be **opened** and invite the candidate for a conversation rather than strictly test his/her/their specific knowledge. Compare:
   * 🚫 `Explain Clustering` 
   * ✅ `When would you use Clustering vs Classification?`  
-* Keep answer **short** and **succinct**. If you feel your answer is growing in size and covering different topics - split it!
+* Keep answers **short** and **succinct**. If you feel your answer is growing in size and covering different topics - split it!
 * Avoid very specific highly practical questions like
   * 🚫 `How to install pandas?` - we wont accept that type of questions
 * Don't submit questions related to personal candidate experience. That questions are valid for an interview but don't fit to the format of MLSC like
