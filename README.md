@@ -145,7 +145,7 @@ There are some good tools that can help you along the way
 
 ## Markdown Editors
 
-* VS Code + Markdown Extensions
+* VS Code + Markdown Extensions - recommended
 * StackEdit.io
 * [Dllinger.io](https://dillinger.io/)
 
