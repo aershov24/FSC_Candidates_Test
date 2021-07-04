@@ -138,9 +138,9 @@ $$J(\theta_0,\theta_1)=\frac{1}{2m}\sum\limits_{i=1}^m (h_{\theta}(x^{(i)})-y^{(
 
 *  **Gradient Descent** is a method for finding the minimum of a function of multiple variables.
 
-# Tools To Shall Use
+# Useful Tools to Try
 
-There are some awesome tools that will greatly help you along the way of content creation:
+There are some awesome tools that will greatly help you along the way of content creation for MLSC:
 
 ## Markdown Extractors & Chrome Extensions
 
