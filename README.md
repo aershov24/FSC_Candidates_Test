@@ -15,7 +15,7 @@ Please read this document carefully before submitting your MLSC candidate challe
 * Make sure that for all QA you'll include:
   * Question Title
   * Question Description (optional)
-  * Answer + Code (if needed) + Math expressions (if needed)
+  * Answer + Code (if needed) + Math expressions (if needed) (see the examples below)
   * Link(s) to sources (you don't need to write answer by yourself, just combine and research best sources that are available)
   * QA Difficulty Level (`entry`, `junior`, `mid`, `senior`, `expert`)
 * Look at the `QAS_Examples.md` file in this repo for examples of QAS Markdown file formatting. Please strictly follow these formatting conventions. That's the key to pass the challenge ;)
@@ -90,7 +90,7 @@ There are a list of quality resources you can do you research on:
 All interview questions must be formatted using those rules:
 
 * use only **Markdown** ([Github flavour](https://guides.github.com/features/mastering-markdown/))
-* use [Katex](https://katex.org/docs/supported.html) for inclusion of math expressions
+* use [Katex](https://katex.org/docs/supported.html) for inclusion of math expressions. **Note**: Github doesn't render Katex syntax in Markdown but VS Code will (with use of some Markdown extensions).
 * **Do** include images, graphs and math into your answers when needed to explain some concepts
 * **Do** use and reformat original source of answer using **lists** for better readability
 
