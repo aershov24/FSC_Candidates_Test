@@ -33,7 +33,7 @@ When choosing a good interview question use several simple tactics:
 * The QA should not be too **broad**, like 
   * 🚫 `What is Machine Learning?`
 * The QA should be **opened** and invite the candidate for a conversation rather than strictly test his/her/their specific knowledge. Compare:
-  * 🚫 `Explain Clustering` 
+  * 🚫 `Write down the formula and steps for the Standard algorithm of naive k-means Clustering`
   * ✅ `When would you use Clustering vs Classification?`  
 * Keep answers **short** and **succinct**. If you feel your answer is growing in size and covering different topics - split it!
 * Avoid very specific highly practical questions like
