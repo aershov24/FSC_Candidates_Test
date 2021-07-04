@@ -37,7 +37,7 @@ When choosing a good interview question use several simple tactics:
   * ✅ `When would you use Clustering vs Classification?`  
 * Keep answers **short** and **succinct**. If you feel your answer is growing in size and covering different topics - split it!
 * Avoid very specific highly practical questions like
-  * 🚫 `How to install pandas?` - we wont accept that type of questions
+  * 🚫 `How to install pandas?` - we won't accept that type of questions
 * Don't submit questions related to personal candidate experience. That questions are valid for an interview but don't fit to the format of MLSC like
   *  🚫 `Have you ever worked with Tensorflow?`
   *  🚫 `Describe your experience building ML models on your previous job?`
