@@ -60,14 +60,14 @@ When choosing a good interview question use several simple tactics:
 
 Remember, **you don't need to write the interview questions and answer by yourself** unless you are 100% sure your can provide the best most brilliant answer to the question you're asking. You task is to research the best sources that are available in the Internet (blog posts, books, videos, tutorials), combine and convert that knowledge to answer.
 
-There are a list of quality resources you can do you research on:
+There is just a fraction of quality resources you can do you research on:
 
 * towardsdatascience.com
-* www.mathsisfun.com
-* ml-cheatsheet.readthedocs.io
 * en.wikipedia.org
 * stats.stackexchange.com
 * datascience.stackexchange.com
+* www.mathsisfun.com
+* ml-cheatsheet.readthedocs.io
 * becominghuman.ai
 * lionbridge.ai
 * machinelearningmastery.com
