@@ -43,7 +43,7 @@ When choosing the good interview question use several simple tactics:
   * ✅ `When to use X vs Y?`
   * ✅ `Why would you use X?`
   * ✅ `Compare X vs Y for solving Z`
-  * ✅ `What types of X for you know?`
+  * ✅ `What types of X do you know?`
   * ✅ `Are there any problems when using X for solving Z?`
   * ✅ `Name some advantages of using X vs Y for solving Z?`
   * ✅ `Explain X to 5 yo/your grandparents`
