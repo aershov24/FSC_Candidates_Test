@@ -4,8 +4,8 @@ Please read this document carefully before submitting your MLSC candidate challe
 
 # What You Need to Do
 
-* Fork this repository
 * Carefully read the `readme.md`
+* Fork this repository
 * Create the `Logistic_Regression_youremail_TEST.md` file in the forked repo and add **3 questions and answers (QAS) relevant to Logistic Regression topic that you would ask on a real interview** if you would hire ML/DS devs for your own project
 * Make sure you add:
   * one **Junior** question for Junior position
