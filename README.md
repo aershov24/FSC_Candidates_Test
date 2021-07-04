@@ -24,7 +24,7 @@ Please read this document carefully before submitting your MLSC candidate challe
 * Create a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from your repo to the MLSC Candidate repo
 * Send us email when you happy us to verify it
 
-# How To Choose Good Interview Question
+# How To Choose/Write Good Interview Questions
 
 When choosing the good interview question use several simple tactics:
 
@@ -93,7 +93,7 @@ All interview questions must be formatted using those rules:
 
 * use only **Markdown** ([Github flavour](https://guides.github.com/features/mastering-markdown/))
 * use [Katex](https://katex.org/docs/supported.html) for inclusion of math expressions. **Note**: Github doesn't render Katex syntax in Markdown but VS Code will (with use of some Markdown extensions).
-* **Do** include images, graphs and math into your answers when needed to explain some concepts
+* **Do** include images (include them as links), graphs and math (using Katex) into your answers if they help to explain concepts you cover
 * **Do** use and reformat original source of answer using **lists** for better readability
 
 See some examples of QA formatting below. Note how to format **list**, **code**, **file names**, **terms**, **links**, QA **difficulties**, **math expressions** and so on:
@@ -136,9 +136,9 @@ $$J(\theta_0,\theta_1)=\frac{1}{2m}\sum\limits_{i=1}^m (h_{\theta}(x^{(i)})-y^{(
 
 *  **Gradient Descent** is a method for finding the minimum of a function of multiple variables.
 
-# Useful Tools To Use
+# Tools To Shall Use
 
-There are some good tools that can help you along the way
+There are some awesome tools that will greatly help you along the way of content creation:
 
 ## Markdown Extractors & Chrome Extensions
 
@@ -157,6 +157,6 @@ There are some good tools that can help you along the way
 * Markdown Preview Enhanced
 * Markdownlint
 
-# What's Next?
+# I'm In! What's Next?
 
 Once we got your pull request we will verify the results and circle back to you in no time. Then we schedule a Slack call and discuss your first MLSC topic to work on :)
