@@ -78,10 +78,11 @@ There are a list of quality resources you can do you research on:
 * www.datatechnotes.com
 * etc ...
 
-⚠️ **Warning**: Don't use information from the websites with bad english grammar and poor QAs quality like:
-* geekforgeeks.com
+⚠️ **Warning**: Don't use/copy information from the websites with bad grammar and poor QAs quality. We won't accept QAs that will be copied from shady sources. You can recognize these sites by deficient crappy design, tons of ads, lack of formatting and content _with no attribution to the sources_ like:
+
 * onlineinterviewquestions.com
-* etc...
+* geekforgeeks.com
+* etc ...
 
 💡 **Hint**: Don't blindly copy all answers from one source for the same topic. Try to find at least 2-3 source of the information and choose the best explanation **you like most**.
 
