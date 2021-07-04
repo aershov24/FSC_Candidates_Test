@@ -60,11 +60,6 @@ When choosing a good interview question use several simple tactics:
 
 Remember, **you don't need to write the interview questions and answer by yourself** unless you are 100% sure your can provide the best most brilliant answer to the question you're asking. You task is to research the best sources that are available in the Internet (blog posts, books, videos, tutorials), combine and convert that knowledge to answer.
 
-⚠️ **Warning**: Don't use information from the websites with bad english grammar and poor QAs quality like:
-* geekforgeeks.com
-* onlineinterviewquestions.com
-* etc...
-
 There are a list of quality resources you can do you research on:
 
 * towardsdatascience.com
@@ -82,6 +77,11 @@ There are a list of quality resources you can do you research on:
 * statisticsbyjim.com
 * www.datatechnotes.com
 * etc ...
+
+⚠️ **Warning**: Don't use information from the websites with bad english grammar and poor QAs quality like:
+* geekforgeeks.com
+* onlineinterviewquestions.com
+* etc...
 
 💡 **Hint**: Don't blindly copy all answers from one source for one topic. Try to find at least 2-3 source of information for the question and choose the best explanation.
 
