@@ -83,7 +83,7 @@ There are a list of quality resources you can do you research on:
 * onlineinterviewquestions.com
 * etc...
 
-💡 **Hint**: Don't blindly copy all answers from one source for one topic. Try to find at least 2-3 source of information for the question and choose the best explanation.
+💡 **Hint**: Don't blindly copy all answers from one source for the same topic. Try to find at least 2-3 source of the information and choose the best explanation **you like most**.
 
 💡**Hint**: Search Github for Machine Learning interview questions repos that other people did. Usually they  already formatted as Markdown and can get you great amount of QAS for the topic
 
