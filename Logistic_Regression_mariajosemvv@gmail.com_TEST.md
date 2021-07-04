@@ -3,7 +3,6 @@
 **QAs Total:** 3
 ---
 ## Q: When logistic regression can be used?
----
 **Difficulty:** `Junior`
 **Source:**
 [https://careerfoundry.com/en/blog/data-analytics/what-is-logistic-regression/](https://careerfoundry.com/en/blog/data-analytics/what-is-logistic-regression/)
@@ -21,7 +20,6 @@ When all the requirements above are satisfied, logistic regression can be used.
 ---
 
 ## Q: What is the difference between logistic regression and linear regression?
----
 **Difficulty:** `Junior`
 **Source:**
 [https://careerfoundry.com/en/blog/data-analytics/what-is-logistic-regression/](https://careerfoundry.com/en/blog/data-analytics/what-is-logistic-regression/)
@@ -30,7 +28,6 @@ When all the requirements above are satisfied, logistic regression can be used.
 - **Logistic regression** predicts the probability of a binary (yes/no) event occurring. Its output is categorical or **discrete**.
 ---
 ## Q: Provide a mathematical intuition of Logistic Regression
----
 **Difficulty:** `Junior`
 **Source:** 
 [https://medium.com/@nikethnarasimhan/logistic-regression-an-intuitive-approach-b1ece5b13c#:~:text=Logistic regression is a statistical,many more complex extensions exist](https://medium.com/@nikethnarasimhan/logistic-regression-an-intuitive-approach-b1ece5b13c#:~:text=Logistic%20regression%20is%20a%20statistical,many%20more%20complex%20extensions%20exist).
