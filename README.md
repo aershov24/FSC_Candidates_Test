@@ -87,7 +87,7 @@ There are a list of quality resources you can do you research on:
 
 💡**Hint**: Search Github for Machine Learning interview questions repos that other people did. Usually they  already formatted as Markdown and can get you great amount of QAS for the topic
 
-💡**Hint**: When exploring some topic look at the `Table of Content` to get a sense on what subtopics you can cover
+💡**Hint**: When research on some topic look at the `Table of Content` in your favorite ML/DS book to get a sense on what subtopics you can cover. Most of the Coursera and Udemy courses will work too!
 
 # How To Format Interview Questions
 
