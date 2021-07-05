@@ -58,7 +58,7 @@ When choosing a good interview question use several simple tactics:
 
 # Where To Find ML/DS Interview Questions
 
-Remember, **you don't need to write the interview questions and answer by yourself** unless you are 100% sure your can provide the best most brilliant answer to the question you're asking. You task is to research the best sources that are available in the Internet (blog posts, books, videos, tutorials), combine and convert that knowledge to answer.
+Remember, **you don't need to write the interview questions and answer by yourself** unless you are 100% sure your can provide the best most brilliant answer to the question you're asking. Your task is to research the best sources that are available in the Internet (blog posts, books, videos, tutorials), combine and convert that knowledge to answer.
 
 There is just a fraction of quality resources you can do you research on:
 
