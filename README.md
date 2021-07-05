@@ -111,12 +111,15 @@ See some examples of QA formatting below. Note how to format **list**, **code**,
 
 https://towardsdatascience.com/5-ways-to-detect-outliers-that-every-data-scientist-should-know-python-code-70a54335a623
 
+**Details**:
+Visualize your answer with example.
+
 **Answer:**
 
 In statistics, if a **data distribution** is approximately **normal** then:
-* about **68%** of the data values lie within **one standard deviation** of the mean and 
-* about **95%** are within **two standard deviations**, and 
-* about **99.7%** lie within **three standard deviations**:
+* about `68%` of the data values lie within **one standard deviation** of the mean and 
+* about `95%` are within **two standard deviations**, and 
+* about `99.7%` lie within **three standard deviations**:
 
 ![](https://miro.medium.com/max/1400/1*rV7rq7F_uB5gwjzzGJ9VqA.png)
 
@@ -133,11 +136,30 @@ Therefore, if you have any data point that is more than 3 times the standard dev
 https://towardsdatascience.com/5-ways-to-detect-outliers-that-every-data-scientist-should-know-python-code-70a54335a623
 
 **Answer:**
-*   A **Cost Function** is something we want to minimize. For example, our cost function might be the sum of squared errors over the training set like:
+*   A **Cost Function** is _something we want to minimize_. For example, our cost function might be the sum of squared errors over the training set like:
 
 $$J(\theta_0,\theta_1)=\frac{1}{2m}\sum\limits_{i=1}^m (h_{\theta}(x^{(i)})-y^{(i)})^2$$
 
-*  **Gradient Descent** is a method for finding the minimum of a function of multiple variables.
+* **Gradient Descent** is a method for _finding the minimum_ of a function of multiple variables.
+
+# How We Asses Your Work
+
+Look at this list of criteria that we will keep in mind assessing your submission:
+
+* Variety and Quality of Sources you have used - don't copy/source QAs from one source for the test
+* Markdown Formatting Quality - don't blindly copy answer, **RE**format it to increase _readability_, for example:
+  * Use paragraphs and new lines to visually separate different parts of the answer
+  * Use **bold** for terms and acronyms
+  * Use **lists** to visually separate different concepts especially if they presented in one long sentence in the source
+  * Use _italic_ to stress attention on critical/important _idea_ or _concepts_ or _hints_ for a reader
+  * Use _italic_ in QA Title for terms and acronyms
+  * Use `code` for numbers: `123`, percentages: `68%`, `file_names.md` and code `<html/>` in your answers
+  * Don't write long QA Titles. Move additional information, problem statement or following questions to QA Details
+* Inclusion of Images is very important
+* Inclusion of Math expressions as Katex syntax is important
+  * Don't include a lot of math expressions as images
+* Keep context of the QA in mind when sourcing QAs. Introduce context for QA if needed (aka _Let's say we solving spam detection problem then we can ..._)
+* If you reference to some information on the image make sure you reference it by its _visible_ ID (A, B, C, ... 1, 2, 3 and etc.)
 
 # Useful Tools to Try
 
