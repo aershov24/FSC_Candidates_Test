@@ -60,4 +60,5 @@ Naturally, **SVM** is used in solving multi-class classification problems. Howev
 When modeling one class, the algorithm captures the **density** of the majority class and classifies examples on the *extremes of the density* function as *outliers*. This modification of SVM is referred to as **One-Class SVM**.
 
 Consider that example:
+
 ![](https://1.bp.blogspot.com/-6eNEzd8LnCs/Xoq8wdXGUiI/AAAAAAAAAug/Nktkh8E-8eEXfW4XX-BMhVxhc_2AY0AQQCPcBGAYYCw/s400/one_class_svm_result2.JPG)
