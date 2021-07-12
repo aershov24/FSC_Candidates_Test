@@ -1,3 +1,9 @@
+> ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+> 
+> **NOTE: Our vacancy is closed! Please don't send any pull requests as we won't process them. Thanks**
+> 
+> ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
 ![](https://user-images.githubusercontent.com/13550565/124379449-be1d1600-dce9-11eb-8a29-f7da7365c1b1.png)
 
 # Welcome to MLSC Candidate Repo
