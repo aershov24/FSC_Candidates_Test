@@ -8,20 +8,20 @@ Please read this document carefully before submitting your FSC candidate challen
 
 * Carefully read the `README.md`
 * **Fork** this repository
-* Create the `RUST_youremail.md` Markdown file in the forked repo and add **`3` questions and answers (QAS) relevant to _Rust Programming Language topic_ that you would ask on a real interview** if you would hire a Rust Developer for your own project. All content must be formatted in Markdown (see examples below).
+* Create the `RUST_youremail.md` Markdown file in the forked repo and add **`3` questions and answers (QAS) relevant to _Rust Programming Language topic_ that you would ask on a real interview** if you would hire a Rust Developer for your own project. All content must be formatted as Markdown (see examples below).
 * Make sure you'll add:
   * one **Junior** question for **Junior** position
   * one **Medium** difficulty question for **Mid** position, and
   * one **Senior** question for **Senior** position
 
-* Make sure that for all QA you'll include:
-  * Question Title
-  * Question Description (optional)
-  * Answer (required) + Code (if needed)
-  * Link(s) to sources (you don't need to write answer by yourself, just combine and research best sources that are available)
-  * QA Difficulty Level (`entry`, `junior`, `mid`, `senior`, `expert`)
-* Look at the `QAS_Examples.md` file in this repo for examples of QAS file formatting in Markdown. Please strictly follow these formatting conventions. This is **the key** to pass the challenge ;)
-* Create a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from your repo to the FSC Candidates repo. Name the PR as `RUST | youremail`. PRs with different names will be declined.
+* Make sure that for all QAs you'll include:
+  * Question **Title**
+  * Question **Description** (optional)
+  * **Answer** (required) + `Code` (if needed)
+  * Link(s) to **Source**s (you don't need to write answer by yourself, just combine and research best sources that are available)
+  * QA **Difficulty** Level. Use that Difficulty enum: [`entry`, `junior`, `mid`, `senior`, `expert`]
+* Look at the `QAS_Examples.md` file in this repo for examples of QAS file formatting in Markdown. Use this file as a template for your submission. Please strictly follow these formatting conventions. This is **the key** to pass the challenge ;)
+* Create a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from your repo into the FSC Candidates repo. Name the PR as `RUST | youremail`. PRs with different names will be rejected.
 * Send us email or DM us on UpWork when you happy us to verify it
 
 # How To Choose/Write Good Interview Questions
@@ -82,9 +82,15 @@ There is just a fraction of quality resources you can do you research on:
 * coderbyte.com
 * etc...
 
+💡 **Hint**: Don't blindly copy all answers from one source for the same topic. Try to find at least 2-3 source of the information and choose the best explanation **you like most**.
+
+💡**Hint**: Search Github for programming interview questions repos that other people did. Usually they already formatted as Markdown and can get you great amount of QAS for the topic
+
+💡**Hint**: When research on some topic look at the `Table of Content` in your favorite programming book to get a sense on what subtopics you can cover. Most of the Coursera and Udemy courses will work too!
+
 # Resources to AVOID
 
-⚠️ **Warning**: Don't use/copy information from the websites with bad grammar and poor QAs quality. We won't accept QAs that will be copied from poor quality resources. You can recognize these sites by deficient crappy design, low quality images, tons of ads, lack of code formatting and code samples and  _no attribution to the sources of the answer_ like:
+⚠️ **Warning**: Don't use/copy information from the websites with bad grammar and poor QAs quality. We won't accept QAs that will be copied from poor quality resources and will reject your submission. You can recognize these sites by deficient crappy design, low quality images, tons of ads, lack of code formatting and code samples and  _no attribution to the sources of the answer_ like:
 
 * onlineinterviewquestions.com
 * geekforgeeks.com
@@ -94,13 +100,7 @@ There is just a fraction of quality resources you can do you research on:
 * a4academics.com
 * etc ...
 
-💡 **Hint**: Don't blindly copy all answers from one source for the same topic. Try to find at least 2-3 source of the information and choose the best explanation **you like most**.
-
-💡**Hint**: Search Github for programming interview questions repos that other people did. Usually they already formatted as Markdown and can get you great amount of QAS for the topic
-
-💡**Hint**: When research on some topic look at the `Table of Content` in your favorite programming book to get a sense on what subtopics you can cover. Most of the Coursera and Udemy courses will work too!
-
-# How To Format Interview Questions
+# How To Format Interview Questions + QAS Examples
 
 All interview questions must be formatted using those rules:
 
@@ -207,4 +207,4 @@ There are some awesome tools that will greatly help you along the way of content
 
 # I'm In! What's Next?
 
-Once we got your pull request we will verify the results and circle back to you in no time. Then we schedule a Slack call and discuss your first FSC topic to work on :)
+Great! Once getting your pull request we'll verify the content and circle back to you in no time. Then we schedule a Google Meet call and discuss your first FSC topic to work on :)
