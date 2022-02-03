@@ -1,17 +1,15 @@
-![](https://user-images.githubusercontent.com/13550565/124379449-be1d1600-dce9-11eb-8a29-f7da7365c1b1.png)
+![](https://user-images.githubusercontent.com/13550565/152297029-160a235d-81f0-4cbb-99cd-d9603e3bb191.png)
 
 # Welcome to FullStack.Cafe Candidates Repo
 
 Please read this document carefully before submitting your FSC candidate challenge.
 
-> The fact is, if you DO read, complete and pass the challenge successfully you most likely lie outside of 3 times the standard deviation from the average candidate, thus you are the "anomaly" on the market, thus we want hire you :)
-
-# What You Need to Do
+# What Do You Need to Do?
 
 * Carefully read the `README.md`
 * **Fork** this repository
-* Create the `RUST_youremail_TEST.md` file in the forked repo and add **`3` questions and answers (QAS) relevant to _Rust Programming Language topic_ that you would ask on a real interview** if you would hire a Rust Developer for your own project. Again, questions must be answered :)
-* Make sure you add:
+* Create the `RUST_youremail.md` Markdown file in the forked repo and add **`3` questions and answers (QAS) relevant to _Rust Programming Language topic_ that you would ask on a real interview** if you would hire a Rust Developer for your own project. All content must be formatted in Markdown (see examples below).
+* Make sure you'll add:
   * one **Junior** question for **Junior** position
   * one **Medium** difficulty question for **Mid** position, and
   * one **Senior** question for **Senior** position
@@ -19,32 +17,31 @@ Please read this document carefully before submitting your FSC candidate challen
 * Make sure that for all QA you'll include:
   * Question Title
   * Question Description (optional)
-  * Answer + Code (if needed)
+  * Answer (required) + Code (if needed)
   * Link(s) to sources (you don't need to write answer by yourself, just combine and research best sources that are available)
   * QA Difficulty Level (`entry`, `junior`, `mid`, `senior`, `expert`)
-* Look at the `QAS_Examples.md` file in this repo for examples of QAS Markdown file formatting. Please strictly follow these formatting conventions. This is **the key** to pass the challenge ;)
-* Create a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from your repo to the FSC Candidates repo
+* Look at the `QAS_Examples.md` file in this repo for examples of QAS file formatting in Markdown. Please strictly follow these formatting conventions. This is **the key** to pass the challenge ;)
+* Create a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from your repo to the FSC Candidates repo. Name the PR as `RUST | youremail`. PRs with different names will be declined.
 * Send us email or DM us on UpWork when you happy us to verify it
 
 # How To Choose/Write Good Interview Questions
 
-When choosing a good interview question use several simple rules:
+When choosing a good interview question follow these rules:
 
-* The QA should not be too **broad**, like 
+* The QA should not be too **broad** or too **obvious/trivial**, like:
   * 🚫 `What is Rust?`
 * The QA should be **opened** and invite the candidate for a conversation rather than strictly test his/her/their specific knowledge. Compare:
-  * 🚫 `What is enum in C#?`
-  * ✅ `Provide an example when you would use enum in C#`  
-  * ✅ `What does the static keyword mean? Can you override private or static method in Rust?`  
-* Keep answers **short**, **succinct** and **informative**. If you feel your answer is growing in size and covers different topics the split it! 
-  * When in doubt use "Minimal Viable Answer" rule - answer the questions straight to the point + add some addition bit of knowledge to impress interviewer.
+  * 🚫 What is `enum` in Rust?
+  * ✅ Provide an example when you would use `enum` in Rust 
+  * ✅ What does the `static` keyword mean? Can you _override_ `private` or `static` method in Rust?
+* Keep the answers **short**, **succinct** and **informative**. If you feel your answer is growing in size and covers different topics the split it!
 * Avoid  highly practical questions like
-  * 🚫 `How to install Rust?` - we won't accept that type of questions
-* Don't submit questions related to personal candidate experience. That questions are valid for an interview but don't fit to the format of FSC like
-  *  🚫 `Have you ever worked with Borsch?`
-  *  🚫 `Describe your experience building SPL Tokens using Rust on your previous job?`
+  * 🚫 How to install Rust? - we won't accept that type of questions
+* Don't submit questions related to a personal candidate experience. These questions are valid on an interview but won't fit to the format of FSC like:
+  *  🚫 Have you ever worked with `Borsch` in Rust?
+  *  🚫 Describe your experience building `SPL Tokens` using Rust on your previous job?
 * Don't submit behavioral questions like:
-  * 🚫 `Describe your strengths and weakness` and so on
+  * 🚫 Describe your strengths and weakness, and so on
 * Use that that types of questions:
   * ✅ `When to use X vs Y?`
   * ✅ `Why would you use X?`
@@ -60,7 +57,7 @@ When choosing a good interview question use several simple rules:
 
 # Where To Find/Source Good Interview Questions
 
-Remember, **you don't need to write the interview questions and answer by yourself** unless you are 100% sure your can provide the best most brilliant answer to the question you're asking. Your task is to research the best sources that are available on the Internet (blog posts, books, videos, tutorials), combine and convert that knowledge to answer.
+Remember, **you don't need to reinvent an interview question and the answer by yourself**. Your task is to research the best sources that are available on the Internet (blog posts, books, videos, tutorials), _combine_, _convert_ and (sometimes) _reformat_ that existing knowledge into the answer.
 
 There is just a fraction of quality resources you can do you research on:
 
@@ -85,7 +82,9 @@ There is just a fraction of quality resources you can do you research on:
 * coderbyte.com
 * etc...
 
-⚠️ **Warning**: Don't use/copy information from the websites with bad grammar and poor QAs quality. We won't accept QAs that will be copied from poor quality resources. You can recognize these sites by deficient crappy design, low quality images, tons of ads, lack of code formatting and code samples and  _no attribution to the sources_ like:
+# Resources to AVOID
+
+⚠️ **Warning**: Don't use/copy information from the websites with bad grammar and poor QAs quality. We won't accept QAs that will be copied from poor quality resources. You can recognize these sites by deficient crappy design, low quality images, tons of ads, lack of code formatting and code samples and  _no attribution to the sources of the answer_ like:
 
 * onlineinterviewquestions.com
 * geekforgeeks.com
@@ -105,11 +104,13 @@ There is just a fraction of quality resources you can do you research on:
 
 All interview questions must be formatted using those rules:
 
-* use only **Markdown** ([Github flavour](https://guides.github.com/features/mastering-markdown/))
-* **Do** include images (include them as links), graphs and math (using Katex) into your answers if they help to explain concepts you cover
-* **Do** use and reformat original source of answer using **lists** for better readability
+* use ONLY **Markdown** ([Github flavour](https://guides.github.com/features/mastering-markdown/))
+* **Do** include images (include them as Markdown links) into your answers if they help to explain concepts you cover
+* **Do** use and reformat original source of answer using **lists**, _italic_ and **bold** for better readability
+* **Do** include formatting in the QA title
+* **Do** format the code (see samples)
 
-See some examples of QA formatting below. Note how to format **list**, **code**, **file names**, **terms**, **links**, QA **difficulties**, **math expressions** and so on. To see more QA formatting examples go to [www.fullstack.cafe](www.fullstack.cafe) and explore our QAs library.
+See some examples of QA formatting below. Note how to format **list**, **code**, **file names**, **terms**, **links**, QA **difficulties**, **images** and so on. To see more QA formatting examples go to [www.fullstack.cafe](www.fullstack.cafe) and explore our QAs library.
 
 ---
 
@@ -168,10 +169,10 @@ Consider:
 
 # How We Asses Your Work
 
-Look at this list of criteria that we will keep in mind assessing your submission:
+Look at this list of criteria that we will keep in mind when assessing your submission:
 
-* Variety and Quality of Sources you have used. We hard stop and reject your candidacy if you copy/source QAs from one source
-* Markdown Formatting Quality - don't blindly copy answer, **RE**format it to increase _readability_, for example:
+* _Variety_ and _Quality of Sources_ you have used. We hard stop and reject your candidacy if you copy/source QAs from one source or sources mentioned to AVOID
+* _Markdown Formatting_ Quality - don't blindly copy answer, **RE**format it to increase _readability_, for example:
   * Use paragraphs and new lines to visually separate different parts of the answer
   * Use **bold** for terms and acronyms
   * Use **lists** to visually separate different concepts especially if they presented in one long sentence in the source
@@ -179,9 +180,9 @@ Look at this list of criteria that we will keep in mind assessing your submissio
   * Use _italic_ in QA Title for terms and acronyms
   * Use `code` for numbers: `123`, percentages: `68%`, `file_names.md` and code `<html/>` in your answers
   * Don't write long QA _Titles_. Move additional information, problem statement or following questions to QA _Details_
-* Inclusion of Images is very important
-* Keep context of the QA in mind when sourcing QAs. Introduce context for QA if needed (aka _Let's say we need to deploy backend on 5000 nodes simultaneously..._)
-* If you reference to some information on the image make sure you reference it by its _visible_ ID (A, B, C, ... 1, 2, 3 and etc.)
+* _Inclusion of Images_ is very important
+* Add context for QA when needed in _Details_ section (aka _Let's say we need to deploy backend on 5000 nodes simultaneously..._)
+* If you reference to some image in the answer make sure you reference it by its _visible_ ID (A, B, C, ... 1, 2, 3 and etc.)
 
 # Useful Tools to Try
 
