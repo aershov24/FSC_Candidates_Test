@@ -110,7 +110,7 @@ All interview questions must be formatted using those rules:
 * **Do** include formatting in the QA title
 * **Do** format the code (see samples)
 
-See some examples of QA formatting below. Note how to format **list**, **code**, **file names**, **terms**, **links**, QA **difficulties**, **images** and so on. To see more QA formatting examples go to [www.fullstack.cafe](www.fullstack.cafe) and explore our QAs library.
+See some examples of QA formatting below. Note how to format **list**, **code**, **file names**, **terms**, **links**, QA **difficulties**, **images** and so on. To see more QA formatting examples go to [www.fullstack.cafe](https://www.fullstack.cafe) and explore our QAs library.
 
 ---
 
