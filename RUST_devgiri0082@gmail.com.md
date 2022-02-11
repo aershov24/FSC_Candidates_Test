@@ -24,20 +24,17 @@ Why does Rust have `String` and `str`? What is the difference between them? When
 
 `str` is an immutable sequence of UTF-8 bytes of dynamic length somewhere in memory. Since the size is unknown, one can only handle it behind a pointer. This means that `str` most commonly appears as `&str`: a reference to some UTF-8 data, normally called a "string slice" or just a "slice". [A slice](https://doc.rust-lang.org/book/ch04-03-slices.html) is just a view onto some data, and that data can be anywhere, e.g.
 
-*   **In static storage**: a string literal `"foo"` is a `&'static str`. The data is hardcoded into the executable and loaded into memory when the program runs.
-    
-*   **Inside a heap allocated `String`**: [`String` dereferences to a `&str` view](https://doc.rust-lang.org/std/string/struct.String.html#deref) of the `String`'s data.
-    
-*   **On the stack**: e.g. the following creates a stack-allocated byte array, and then gets a [view of that data as a `&str`](https://doc.rust-lang.org/std/str/fn.from_utf8.html):
-    
-    ```rs
-        use std::str;
-        
-        let x: &[u8] = &[b'a', b'b', b'c'];
-        let stack_str: &str = str::from_utf8(x).unwrap();
-    ```
-        
-    
+* **In static storage**: a string literal `"foo"` is a `&'static str`. The data is hardcoded into the executable and loaded into memory when the program runs.
+
+* **Inside a heap allocated `String`**: [`String` dereferences to a `&str` view](https://doc.rust-lang.org/std/string/struct.String.html#deref) of the `String`'s data.
+
+* **On the stack**: e.g. the following creates a stack-allocated byte array, and then gets a [view of that data as a `&str`](https://doc.rust-lang.org/std/str/fn.from_utf8.html):
+
+```rs
+use std::str; 
+let x: &[u8] = &[b'a', b'b', b'c'];
+let stack_str: &str = str::from_utf8(x).unwrap();
+```
 
 In summary, use `String` if you need owned string data (like passing strings to other threads, or building them at runtime), and use `&str` if you only need a view of a string.
 
@@ -80,7 +77,7 @@ https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html#unsafe-rust
 
 **Details**:
 
-Explain `unsafe-rust`. When is the benefit of using `unsafe-rust`. Provide some example of the unsafe-rust.
+Explain `unsafe-rust`. When is the benefit of using `unsafe-rust`. Provide some example of the `unsafe-rust`.
 
 **Answer:**
 
@@ -88,33 +85,28 @@ Rust’s memory safety guarantees enforced at compile time. However, Rust has a 
 
 To switch to unsafe Rust, use the `unsafe` keyword and then start a new block that holds the unsafe code. You can take five actions in unsafe Rust, called _unsafe superpowers_, that you can’t in safe Rust. Those superpowers include the ability to:
 
-*   Dereference a raw pointer
-*   Call an unsafe function or method
-*   Access or modify a mutable static variable
-*   Implement an unsafe trait
-*   Access fields of `union`s
+* Dereference a raw pointer
+* Call an unsafe function or method
+* Access or modify a mutable static variable
+* Implement an unsafe trait
+* Access fields of `union`s
 
- `unsafe` doesn’t turn off the borrow checker or disable any other of Rust’s safety checks: if we use a reference in unsafe code, it will still be checked. The `unsafe` keyword only gives you access to these five features that are then not checked by the compiler for memory safety. we’ll still get some degree of safety inside of an unsafe block.
+`unsafe` doesn’t turn off the borrow checker or disable any other of Rust’s safety checks: if we use a reference in unsafe code, it will still be checked. The `unsafe` keyword only gives you access to these five features that are then not checked by the compiler for memory safety. we’ll still get some degree of safety inside of an unsafe block.
 
 EXAMPLE:
- ```rs
-     static mut COUNTER: u32 = 0;
+
+```rs
+static mut COUNTER: u32 = 0;
     
-    fn add_to_count(inc: u32) {
-        unsafe {
-            COUNTER += inc;
-        }
+fn add_to_count(inc: u32) {
+    unsafe {
+        COUNTER += inc;
     }
-    
-    fn main() {
-        add_to_count(3);
-    
-        unsafe {
-            println!("COUNTER: {}", COUNTER);
-        }
+}
+fn main() {
+    add_to_count(3);
+    unsafe {
+        println!("COUNTER: {}", COUNTER);
     }
- ```
-
-
-
-
+}
+```
