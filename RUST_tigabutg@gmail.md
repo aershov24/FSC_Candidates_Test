@@ -40,7 +40,7 @@ The `Rust` language has many strengths to consider when choosing the best langua
 
 **Source:** 
 
-**Book:** _Mastering Rust Second Edition:  Rahul Sharma Vesa Kaihlavirta_
+**Book:** [_Mastering Rust Second Edition:  Rahul Sharma Vesa Kaihlavirta_](https://www.amazon.com/Mastering-Rust-memory-concurrency-features/dp/1789346576)
 
 * One of the primary motivations for `unsafe traits` existing in the first place
 is _to mark types that cannot be sent to or shared between threads_. This is achieved via the unsafe `Send` and `Sync` marker traits.
@@ -55,31 +55,33 @@ For example
 // unsafe_trait_and_impl.rs
 struct MyType;
 unsafe trait UnsafeTrait {
-unsafe fn unsafe_func(&self);
-fn safe_func(&self) {
-println!("Things are fine here!");
-}
-}
-trait SafeTrait {
-unsafe fn look_before_you_call(&self);
-}
-unsafe impl UnsafeTrait for MyType {
-unsafe fn unsafe_func(&self) {
-println!("Highly unsafe");
-}
-}
-impl SafeTrait for MyType {
-unsafe fn look_before_you_call(&self) {
-println!("Something unsafe!");
-}
+  unsafe fn unsafe_func(&self);
+  fn safe_func(&self) {
+    println!("Things are fine here!");
+  }
 }
 
+trait SafeTrait {
+  unsafe fn look_before_you_call(&self);
+}
+
+unsafe impl UnsafeTrait for MyType {
+  unsafe fn unsafe_func(&self) {
+    println!("Highly unsafe");
+  }
+}
+
+impl SafeTrait for MyType {
+  unsafe fn look_before_you_call(&self) {
+    println!("Something unsafe!");
+  }
+}
 
 fn main() {
-let my_type = MyType;
-my_type.safe_func();
-unsafe {
-my_type.look_before_you_call();
-}
+  let my_type = MyType;
+  my_type.safe_func();
+  unsafe {
+    my_type.look_before_you_call();
+  }
 }
 ```
