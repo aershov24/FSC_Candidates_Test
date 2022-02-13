@@ -6,33 +6,23 @@
 
 ---
 
-## Q1: What is the difference between `String` and `str` in Rust??
+## Q1: How is the Rust `ownership model` executed and enforced?
 
 **Difficulty:** `Junior`
 
 **Source:**
 
-https://stackoverflow.com/questions/24158114/what-are-the-differences-between-rusts-string-and-str
+https://hacks.mozilla.org/2015/05/diving-into-rust-for-the-first-time/
 
-https://github.com/rust-lang/rustlings/tree/main/exercises/strings
+https://dzone.com/articles/ownership-in-the-rust-language
 
-https://doc.rust-lang.org/book/ch08-02-strings.html
+https://github.com/alshdavid/BorrowScript#borrow-checker-tldr
 
-**Details**:
-
-Provide some code example.
+https://doc.rust-lang.org/stable/book/2018-edition/ch04-01-what-is-ownership.html
 
 **Answer:**
 
-The string slice `str` is the **only** string type in Rust’s core language whereas the `String` type is the _owned_ string provided by Rust’s standard library.
-
-For example:
-
-```rust
-let a: String = "hello".into();
-
-let a: &str = "hello";
-```
+The [_Rust Compiler_](https://www.rust-lang.org/) and [_Borrow checker_](https://github.com/alshdavid/BorrowScript#borrow-checker-tldr) execute and enforce the checks required for the [`ownership model`](https://hacks.mozilla.org/2015/05/diving-into-rust-for-the-first-time/) to work.  
 
 ---
 
