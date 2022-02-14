@@ -4,7 +4,7 @@
 
 **Conact EMail**: xizhen1109@gmail.com
 
-**QAs Total**: 4
+**QAs Total**: 3
 
 ---
 
@@ -45,224 +45,37 @@ This is identical to the relationship between a vector `Vec<T>` and a slice `&[T
 
 ---
 
-## Q2: How do I create a `global`, `mutable singleton` in Rust?
+## Q2: How do I `cross-complie` in Rust?
 
 **Difficulty:** `Mid`
 
 **Source**:
 
-https://stackoverflow.com/questions/27791532/how-do-i-create-a-global-mutable-singleton
+https://rust-lang.github.io/rustup/cross-compilation.html
 
 **Answer**:
 
-In the 3 following solutions:
+Rust [supports a great number of platforms](https://doc.rust-lang.org/nightly/rustc/platform-support.html). For many of these platforms The Rust Project publishes binary releases of the standard library, and for some the full compiler. rustup gives easy access to all of them.
 
-- If you remove the [Mutex](https://doc.rust-lang.org/std/sync/struct.Mutex.html) then you have a global singleton without any mutability.
-- You can also use a [RwLock](https://doc.rust-lang.org/std/sync/struct.RwLock.html) instead of a Mutex to allow multiple concurrent readers.
+When you first install a toolchain, `rustup` installs only the standard library for your host platform - that is, the architecture and operating system you are presently running. To compile to other platforms you must install other target platforms. This is done with the `rustup target add` command. For example, to add the Android target:
 
-Using `lazy-static`:
+- $ rustup target add arm-linux-androideabi
+info: downloading component 'rust-std' for 'arm-linux-androideabi'
+info: installing component 'rust-std' for 'arm-linux-androideabi'
 
-The [`lazy-static`](https://crates.io/crates/lazy_static) crate can take away some of the drudgery of manually creating a singleton. Here is a global mutable vector:
+With the `arm-linux-androideabi` target installed you can then build for Android with Cargo by passing the `--target` flag, as in `cargo build --target=arm-linux-androideabi`.
 
-```js
-use lazy_static::lazy_static; // 1.4.0
-use std::sync::Mutex;
+Note that rustup target add only installs the Rust standard library for a given target. There are typically other tools necessary to cross-compile, particularly a linker. For example, to cross compile to Android the [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) must be installed. In the future, `rustup` will provide assistance installing the NDK components as well.
 
-lazy_static! {
-    static ref ARRAY: Mutex<Vec<u8>> = Mutex::new(vec![]);
-}
+To install a target for a toolchain that isn't the default toolchain use the `--toolchain` argument of rustup target add, like so:
 
-fn do_a_call() {
-    ARRAY.lock().unwrap().push(1);
-}
+- $ rustup target add --toolchain <toolchain> <target>...
 
-fn main() {
-    do_a_call();
-    do_a_call();
-    do_a_call();
-
-    println!("called {}", ARRAY.lock().unwrap().len());
-}
-```
-
-Using `once_cell`:
-
-The [`once_cell`](https://crates.io/crates/once_cell) crate can take away some of the drudgery of manually creating a singleton. Here is a global mutable vector:
-
-```js
-use once_cell::sync::Lazy; // 1.3.1
-use std::sync::Mutex;
-
-static ARRAY: Lazy<Mutex<Vec<u8>>> = Lazy::new(|| Mutex::new(vec![]));
-
-fn do_a_call() {
-    ARRAY.lock().unwrap().push(1);
-}
-
-fn main() {
-    do_a_call();
-    do_a_call();
-    do_a_call();
-
-    println!("called {}", ARRAY.lock().unwrap().len());
-}
-```
-
-Using `std::sync::SyncLazy`:
-
-The standard library is in the [`process`](https://github.com/rust-lang/rust/issues/74465) of adding `once_cell`'s functionality, currently called [`SyncLazy`](https://doc.rust-lang.org/nightly/std/lazy/struct.SyncLazy.html):
-
-```js
-#![feature(once_cell)] // 1.53.0-nightly (2021-04-01 d474075a8f28ae9a410e)
-use std::{lazy::SyncLazy, sync::Mutex};
-
-static ARRAY: SyncLazy<Mutex<Vec<u8>>> = SyncLazy::new(|| Mutex::new(vec![]));
-
-fn do_a_call() {
-    ARRAY.lock().unwrap().push(1);
-}
-
-fn main() {
-    do_a_call();
-    do_a_call();
-    do_a_call();
-
-    println!("called {}", ARRAY.lock().unwrap().len());
-}
-```
-
-`A special case: atomics`:
-
-If you only need to track an integer value, you can directly use an [`atomic`](https://doc.rust-lang.org/std/sync/atomic/):
-
-```js
-use std::sync::atomic::{AtomicUsize, Ordering};
-
-static CALL_COUNT: AtomicUsize = AtomicUsize::new(0);
-
-fn do_a_call() {
-    CALL_COUNT.fetch_add(1, Ordering::SeqCst);
-}
-
-fn main() {
-    do_a_call();
-    do_a_call();
-    do_a_call();
-
-    println!("called {}", CALL_COUNT.load(Ordering::SeqCst));
-}
-```
-
-`Manual, dependency-free implementation`:
-
-There are several existing implementation of statics, such as [`the Rust 1.0 implementation of stdin`](https://github.com/rust-lang/rust/blob/2a8cb678e61e91c160d80794b5fdd723d0d4211c/src/libstd/io/stdio.rs#L217-L247). This is the same idea adapted to modern Rust, such as the use of `MaybeUninit` to avoid allocations and unnecessary indirection. You should also look at the modern implementation of [`io::Lazy`](https://github.com/rust-lang/rust/blob/1.42.0/src/libstd/io/lazy.rs). I've commented inline with what each line does.
-
-```js
-use std::sync::{Mutex, Once};
-use std::time::Duration;
-use std::{mem::MaybeUninit, thread};
-
-struct SingletonReader {
-    // Since we will be used in many threads, we need to protect
-    // concurrent access
-    inner: Mutex<u8>,
-}
-
-fn singleton() -> &'static SingletonReader {
-    // Create an uninitialized static
-    static mut SINGLETON: MaybeUninit<SingletonReader> = MaybeUninit::uninit();
-    static ONCE: Once = Once::new();
-
-    unsafe {
-        ONCE.call_once(|| {
-            // Make it
-            let singleton = SingletonReader {
-                inner: Mutex::new(0),
-            };
-            // Store it to the static var, i.e. initialize it
-            SINGLETON.write(singleton);
-        });
-
-        // Now we give out a shared reference to the data, which is safe to use
-        // concurrently.
-        SINGLETON.assume_init_ref()
-    }
-}
-
-fn main() {
-    // Let's use the singleton in a few threads
-    let threads: Vec<_> = (0..10)
-        .map(|i| {
-            thread::spawn(move || {
-                thread::sleep(Duration::from_millis(i * 10));
-                let s = singleton();
-                let mut data = s.inner.lock().unwrap();
-                *data = i as u8;
-            })
-        })
-        .collect();
-
-    // And let's check the singleton every so often
-    for _ in 0u8..20 {
-        thread::sleep(Duration::from_millis(5));
-
-        let s = singleton();
-        let data = s.inner.lock().unwrap();
-        println!("It is: {}", *data);
-    }
-
-    for thread in threads.into_iter() {
-        thread.join().unwrap();
-    }
-}
-```
-`The meaning of "global"`:
-
-Please note that you can still use normal Rust scoping and module-level privacy to control access to a `static` or `lazy_static` variable. This means that you can declare it in a module or even inside of a function and it won't be accessible outside of that module / function. This is good for controlling access:
-
-```js
-use lazy_static::lazy_static; // 1.2.0
-
-fn only_here() {
-    lazy_static! {
-        static ref NAME: String = String::from("hello, world!");
-    }
-    
-    println!("{}", &*NAME);
-}
-
-fn not_here() {
-    println!("{}", &*NAME);
-}
-```
-
-However, the variable is still global in that there's one instance of it that exists across the entire program.
+To see a list of available targets, `rustup target list`. To remove a previously-added target, `rustup target remove`.
 
 ---
 
-## Q3: Is there any way to get unstable features on the compiler versions in stable or beta??
-
-**Difficulty:** `Mid`
-
-**Source**:
-
-https://stackoverflow.com/questions/34430429/is-there-any-way-to-get-unstable-features-on-the-compiler-versions-in-stable-or
-
-**Answer**:
-
-You cannot (trivially) compile any stable version of Rust to use unstable features. Nor can you download the stable version as if it were unstable. However, Rust's downloads has a set of archives.
-
-By checking when the most recent release happened:
-
-![](https://i.stack.imgur.com/dJfYk.png)
-
-I could figure out what day the current Beta was technically a Nightly. Now, presuming there wasn't a major bugfix between the previous Nightly and Beta releases of 1.6, I went to the folder (in this case, December 9, 2015) and downloaded the corresponding Nightly installer from the list.
-
-There are folders going back to 2014-11-07, so if you need a specific version of Rust from the past to compile your code, you can likely find it there.
-
----
-
-## Q4: What is the relation between `auto-dereferencing` and `deref` coercion?
+## Q3: What is the relation between `auto-dereferencing` and `deref` coercion?
 
 **Difficulty**: `Senior`
 
