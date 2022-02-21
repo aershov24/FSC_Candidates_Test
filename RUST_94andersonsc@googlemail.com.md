@@ -88,7 +88,7 @@ println!("The resultant vector has x: {}, y: {}", result.x, result.y);
 
 A `trait` is an abstract definition for a struct which will need to be implemented via an `impl` call per-class
 
-# Advanced
+# Q3: Why am I getting an error referring to 
 
 **source**: https://stackoverflow.com/questions/25818082/vector-of-objects-belonging-to-a-trait
 
@@ -122,6 +122,9 @@ let v: Vec<Animal> = Vec::new();
 Please explain in your own words:
  - What this error is referring to
  - A potential solution to resolve the issue
+
+ **Details**:
+ Please provide a working example to fix the code
 
 **Answer**:
 
