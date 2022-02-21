@@ -1,4 +1,4 @@
-#Topic: Rust
+# Topic: Rust
 
 **Author**: Scott Anderson
 
@@ -88,7 +88,7 @@ println!("The resultant vector has x: {}, y: {}", result.x, result.y);
 
 A `trait` is an abstract definition for a struct which will need to be implemented via an `impl` call per-class
 
-# Q3: Why am I getting an error referring to 
+# Q3: Why am I getting an error referring to
 
 **source**: https://stackoverflow.com/questions/25818082/vector-of-objects-belonging-to-a-trait
 
